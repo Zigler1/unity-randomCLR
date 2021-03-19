@@ -15,7 +15,7 @@ public class randomCl : MonoBehaviour
         mat.color = new Color(Random.Range(0F,1F), Random.Range(0, 1F), Random.Range(0, 1F));//4 random color 
 
         Color[] colors = new Color[6];
-        colors[0] = Color.green ;
+        colors[0] = new Color(Random.Range(0F,1F), Random.Range(0, 1F), Random.Range(0, 1F));
         colors[1] = Color.red;
         colors[2] = Random.ColorHSV();
         colors[3] = new Color32(255,0,255,255);
