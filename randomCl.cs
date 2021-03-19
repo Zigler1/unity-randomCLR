@@ -6,11 +6,13 @@ public class randomCl : MonoBehaviour
 {
 
     public Material mat;
+    
     void Start()
     {
-       // mat.color = Random.ColorHSV();// random hsv color
-        mat.color = Color.red;
-        mat.color = new Color32(0,3,255,255);// color with rgb parameters
+       // mat.color = Random.ColorHSV();//1 random hsv color
+        mat.color = Color.red;//2 normal color
+        mat.color = new Color32(0,3,255,255);//3 color with rgb parameters
+        mat.color = new Color(Random.Range(0F,1F), Random.Range(0, 1F), Random.Range(0, 1F));//4 random color 
 
         Color[] colors = new Color[6];
         colors[0] = Color.green ;
@@ -22,7 +24,7 @@ public class randomCl : MonoBehaviour
         // you can add as many colors you want 
         // thanks for watching 
 
-        mat.color = colors[Random.Range(0,colors.Length)]; // random color from list colors from 0 to length
+        mat.color = colors[Random.Range(0,colors.Length)]; //5 random color from list (colors from 0 to length)
 
 
     }
