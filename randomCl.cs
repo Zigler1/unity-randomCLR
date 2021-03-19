@@ -9,10 +9,10 @@ public class randomCl : MonoBehaviour
     
     void Start()
     {
-       // mat.color = Random.ColorHSV();//1 random hsv color
+        mat.color = Random.ColorHSV();//1 random hsv color
         mat.color = Color.red;//2 normal color
         mat.color = new Color32(0,3,255,255);//3 color with rgb parameters
-        mat.color = new Color(Random.Range(0F,1F), Random.Range(0, 1F), Random.Range(0, 1F));//4 random color 
+        mat.color = new Color(Random.Range(0F,1F), Random.Range(0, 1F), Random.Range(0, 1F));//4 random rgb parameters
 
         Color[] colors = new Color[6];
         colors[0] = new Color(Random.Range(0F,1F), Random.Range(0, 1F), Random.Range(0, 1F));
